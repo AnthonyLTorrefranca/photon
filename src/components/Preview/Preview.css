@@ -1,0 +1,35 @@
+.addFileWrapper{
+    position: relative;
+    overflow: hidden;
+}
+.addFileTitle, .addFileTitle input{
+    cursor: pointer;
+}
+.addFileTitle.active{
+    display: none;
+}
+.closeBtn{
+    display: none;
+    cursor: pointer;
+    transform: rotate(45deg) scale(-0.2);
+}
+.previewWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.previewWrapper img{
+    transform: scale(0.2);
+    top: 0;
+    right: 0;
+}
+.closeBtn.active{
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transform: rotate(45deg);
+}
